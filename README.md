@@ -1,6 +1,6 @@
-# PAINEL CB Full: Indicador Integrado para Monitoramento de Pedidos
+# PAINEL Monitoramento de Pedidos: Indicador Integrado para Monitoramento de Pedidos
 
-Descubra o **Painel CB Full**, uma solução completa que transforma dados operacionais em insights estratégicos. Com ele, você pode:
+Descubra o **Painel Monitoramento de Pedidos**, uma solução completa que transforma dados operacionais em insights estratégicos. Com ele, você pode:
 
 - **Acompanhar a Expedição por Hora:**  
   Visualize o volume de pedidos expedidos, com comparativos entre hoje, ontem e a semana passada.
@@ -21,14 +21,16 @@ Descubra o **Painel CB Full**, uma solução completa que transforma dados opera
 - **Transparência dos Dados:**  
   Uma tabela de extração detalha a base tratada, garantindo robustez na análise.
 
-O **CB Full** oferece uma visão clara e abrangente para otimizar processos e apoiar decisões estratégicas, unindo dados precisos e visualizações impactantes.
+O **indicador** oferece uma visão clara e abrangente para otimizar processos e apoiar decisões estratégicas, unindo dados precisos e visualizações impactantes.
 
 # CAPA
 
-![image](https://github.com/user-attachments/assets/b6388a88-3e60-4b60-a29b-36552cf995a1)
+![image](https://github.com/user-attachments/assets/d976ad57-44f3-440a-9c5c-840601b61fe5)
+
 
 # INDICADOR
 
-![image](https://github.com/user-attachments/assets/f001ebf7-b53b-433e-8089-fc149204124b)
+![image](https://github.com/user-attachments/assets/aa821eec-71a4-4902-bd86-af5277605c8e)
+
 
 
