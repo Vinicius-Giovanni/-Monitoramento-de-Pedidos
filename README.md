@@ -22,3 +22,13 @@ Descubra o **Painel CB Full**, uma solução completa que transforma dados opera
   Uma tabela de extração detalha a base tratada, garantindo robustez na análise.
 
 O **CB Full** oferece uma visão clara e abrangente para otimizar processos e apoiar decisões estratégicas, unindo dados precisos e visualizações impactantes.
+
+# CAPA
+
+![image](https://github.com/user-attachments/assets/b6388a88-3e60-4b60-a29b-36552cf995a1)
+
+# INDICADOR
+
+![image](https://github.com/user-attachments/assets/666dbf1e-8002-44cd-9f7a-de5201b0e889)
+
+
