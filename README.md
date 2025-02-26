@@ -29,6 +29,6 @@ O **CB Full** oferece uma visão clara e abrangente para otimizar processos e ap
 
 # INDICADOR
 
-![image](https://github.com/user-attachments/assets/666dbf1e-8002-44cd-9f7a-de5201b0e889)
+![image](https://github.com/user-attachments/assets/f001ebf7-b53b-433e-8089-fc149204124b)
 
 
