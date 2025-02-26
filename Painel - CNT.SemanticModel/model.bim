@@ -107,16 +107,6 @@
                     "n": {
                       "State": "Generated"
                     }
-                  },
-                  {
-                    "m": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -749,16 +739,6 @@
                   {
                     "duracao": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "Duração": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -1756,6 +1736,52 @@
                   }
                 ]
               },
+              "medida.comp_media_ped": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "comp_media_ped"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "comp media ped": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "comp_media_ped": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.comp_media_pedxpcs": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "comp_media_pedxpcs"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "comp media pedxpcs": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "comp_media_pedxpcs": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
               "medida.d2": {
                 "Definition": {
                   "Binding": {
@@ -1861,6 +1887,105 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "medida.duracao_12": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "duracao_12"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "duracao 12": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "duracao_12": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "+ 12 Horas": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medida.duracao_24": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "duracao_24"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "duracao 24": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "duracao_24": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "+ 24 Horas": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medida.duracao_6": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "duracao_6"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "duracao 6": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "duracao_6": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "+ 6 Horas": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2028,7 +2153,7 @@
                     }
                   },
                   {
-                    "m": {
+                    "0": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2061,7 +2186,7 @@
                     }
                   },
                   {
-                    "m": {
+                    "p": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2094,7 +2219,7 @@
                     }
                   },
                   {
-                    "m": {
+                    "q": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2389,6 +2514,52 @@
                   }
                 ]
               },
+              "medida.pcs_hoje": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "pcs_hoje"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pcs hoje": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "pcs_hoje": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.ped_hoje": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "ped_hoje"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ped hoje": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ped_hoje": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
               "medida.qt_movimentada_hoje": {
                 "Definition": {
                   "Binding": {
@@ -2422,16 +2593,6 @@
                   },
                   {
                     "Hoje |": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Pçs Movimentadas Hj": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2547,16 +2708,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "Pedidos": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -3451,6 +3602,105 @@
                 },
                 "State": "Generated"
               },
+              "f_relatorio_avancado_has_medida_duracao_12": {
+                "Binding": {
+                  "ConceptualEntity": "fRelatorio_avancado"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.duracao_12"
+                      },
+                      "Subject": {
+                        "Role": "f_relatorio_avancado"
+                      }
+                    },
+                    "ID": "f_relatorio_avancados_have_duracao_12",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_relatorio_avancado": {
+                    "Target": {
+                      "Entity": "f_relatorio_avancado"
+                    }
+                  },
+                  "medida.duracao_12": {
+                    "Target": {
+                      "Entity": "medida.duracao_12"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_relatorio_avancado_has_medida_duracao_24": {
+                "Binding": {
+                  "ConceptualEntity": "fRelatorio_avancado"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.duracao_24"
+                      },
+                      "Subject": {
+                        "Role": "f_relatorio_avancado"
+                      }
+                    },
+                    "ID": "f_relatorio_avancados_have_duracao_24",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_relatorio_avancado": {
+                    "Target": {
+                      "Entity": "f_relatorio_avancado"
+                    }
+                  },
+                  "medida.duracao_24": {
+                    "Target": {
+                      "Entity": "medida.duracao_24"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_relatorio_avancado_has_medida_duracao_6": {
+                "Binding": {
+                  "ConceptualEntity": "fRelatorio_avancado"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.duracao_6"
+                      },
+                      "Subject": {
+                        "Role": "f_relatorio_avancado"
+                      }
+                    },
+                    "ID": "f_relatorio_avancados_have_duracao_6",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_relatorio_avancado": {
+                    "Target": {
+                      "Entity": "f_relatorio_avancado"
+                    }
+                  },
+                  "medida.duracao_6": {
+                    "Target": {
+                      "Entity": "medida.duracao_6"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "f_relatorio_avancado_has_medida_exp_hj": {
                 "Binding": {
                   "ConceptualEntity": "fRelatorio_avancado"
@@ -3611,6 +3861,72 @@
                   "medida.media_pd_dia": {
                     "Target": {
                       "Entity": "medida.media_pd_dia"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_relatorio_avancado_has_medida_pcs_hoje": {
+                "Binding": {
+                  "ConceptualEntity": "fRelatorio_avancado"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.pcs_hoje"
+                      },
+                      "Subject": {
+                        "Role": "f_relatorio_avancado"
+                      }
+                    },
+                    "ID": "f_relatorio_avancados_have_pcs_hoje",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_relatorio_avancado": {
+                    "Target": {
+                      "Entity": "f_relatorio_avancado"
+                    }
+                  },
+                  "medida.pcs_hoje": {
+                    "Target": {
+                      "Entity": "medida.pcs_hoje"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_relatorio_avancado_has_medida_ped_hoje": {
+                "Binding": {
+                  "ConceptualEntity": "fRelatorio_avancado"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.ped_hoje"
+                      },
+                      "Subject": {
+                        "Role": "f_relatorio_avancado"
+                      }
+                    },
+                    "ID": "f_relatorio_avancados_have_ped_hoje",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_relatorio_avancado": {
+                    "Target": {
+                      "Entity": "f_relatorio_avancado"
+                    }
+                  },
+                  "medida.ped_hoje": {
+                    "Target": {
+                      "Entity": "medida.ped_hoje"
                     }
                   }
                 },
@@ -4007,6 +4323,72 @@
                   "medida.comp_media_pcs": {
                     "Target": {
                       "Entity": "medida.comp_media_pcs"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_comp_media_ped": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.comp_media_ped"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_comp_media_ped",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.comp_media_ped": {
+                    "Target": {
+                      "Entity": "medida.comp_media_ped"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_comp_media_pedxpcs": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.comp_media_pedxpcs"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_comp_media_pedxpcs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.comp_media_pedxpcs": {
+                    "Target": {
+                      "Entity": "medida.comp_media_pedxpcs"
                     }
                   }
                 },
@@ -5856,6 +6238,42 @@
               "B"
             ],
             "lineageTag": "d352203f-50e0-4e7a-b25e-bb3413e5907f"
+          },
+          {
+            "name": "duracao_6",
+            "expression": [
+              "",
+              "",
+              "CALCULATE(",
+              "    [qt_pedidos],",
+              "    fRelatorio_avancado[duracao] = \"6+\")"
+            ],
+            "formatString": "0",
+            "lineageTag": "0b0b02bc-9efd-482e-bdf5-6d1f1c59166d"
+          },
+          {
+            "name": "duracao_12",
+            "expression": [
+              "",
+              "",
+              "CALCULATE(",
+              "    [qt_pedidos],",
+              "    fRelatorio_avancado[duracao] = \"12+\")"
+            ],
+            "formatString": "0",
+            "lineageTag": "bf33d12e-7996-4c77-8280-77e4d59d7654"
+          },
+          {
+            "name": "duracao_24",
+            "expression": [
+              "",
+              "",
+              "CALCULATE(",
+              "    [qt_pedidos],",
+              "    fRelatorio_avancado[duracao] = \"24+\")"
+            ],
+            "formatString": "0",
+            "lineageTag": "cdd2def0-325f-4c62-9cf6-33af5567bd8f"
           }
         ],
         "partitions": [
