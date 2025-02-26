@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 98
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "22ad9989-7813-4bbc-a8d9-ca393d436f10",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 86
+          },
+          "nodeIndex": "dHora_atual",
+          "nodeLineageTag": "bc0865e8-d5d5-483a-9a72-18cdcbbd9540",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 558,
+            "y": 0
+          },
+          "nodeIndex": "fRelatorio_avancado",
+          "nodeLineageTag": "610434fc-dd07-40ca-88f9-3c633ebc7219",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 903,
+            "y": 20
+          },
+          "nodeIndex": "dHora",
+          "nodeLineageTag": "7eeeb4f6-0f74-4258-a48d-0f228d2c7dd5",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 982,
+            "y": 227
+          },
+          "nodeIndex": "dDesc",
+          "nodeLineageTag": "753b4e8e-1bc3-44c2-b463-bb7415776a56",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
