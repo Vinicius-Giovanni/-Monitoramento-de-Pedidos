@@ -5892,7 +5892,7 @@
               "VAR A =",
               "CALCULATE(",
               "    [qt_pedidos],",
-              "    fRelatorio_avancado[status_de_entrega] = \" >D+2\")",
+              "    fRelatorio_avancado[status_de_entrega] = \" >D+2\" || fRelatorio_avancado[status_de_entrega] = \"D+1\")",
               "",
               "VAR B =",
               "IF(A = 0 , 0, A)",
