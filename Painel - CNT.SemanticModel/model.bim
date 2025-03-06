@@ -1094,16 +1094,6 @@
                     }
                   },
                   {
-                    "tatus_resumo": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
                     "Status": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -1782,6 +1772,22 @@
                   }
                 ]
               },
+              "medida.d1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "d+1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "d+1": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "medida.d2": {
                 "Definition": {
                   "Binding": {
@@ -1793,6 +1799,22 @@
                 "Terms": [
                   {
                     ">d+2": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.d21": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "d+2"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "d+2": {
                       "State": "Generated"
                     }
                   }
@@ -2249,16 +2271,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "Liberado P/Separação": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -4394,6 +4406,39 @@
                 },
                 "State": "Generated"
               },
+              "medida_has_d1": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.d1"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_d1",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.d1": {
+                    "Target": {
+                      "Entity": "medida.d1"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "medida_has_d2": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -4403,6 +4448,39 @@
                     "Attribute": {
                       "Object": {
                         "Role": "medida.d2"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_d21",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.d2": {
+                    "Target": {
+                      "Entity": "medida.d2"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_d21": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.d21"
                       },
                       "Subject": {
                         "Role": "medida"
@@ -4419,9 +4497,9 @@
                       "Entity": "medida"
                     }
                   },
-                  "medida.d2": {
+                  "medida.d21": {
                     "Target": {
-                      "Entity": "medida.d2"
+                      "Entity": "medida.d21"
                     }
                   }
                 },
@@ -5892,7 +5970,7 @@
               "VAR A =",
               "CALCULATE(",
               "    [qt_pedidos],",
-              "    fRelatorio_avancado[status_de_entrega] = \" >D+2\" || fRelatorio_avancado[status_de_entrega] = \"D+1\")",
+              "    fRelatorio_avancado[status_de_entrega] = \" >D+2\")",
               "",
               "VAR B =",
               "IF(A = 0 , 0, A)",
@@ -6038,8 +6116,7 @@
             "displayFolder": "Tabela 2",
             "expression": [
               "",
-              "",
-              "[exp_hj] + [fim_sep] + [liberado_sep] + [faturado]"
+              " [fim_sep] + [liberado_sep] + [faturado]"
             ],
             "formatString": "0",
             "lineageTag": "84064535-3b36-466d-994e-11972ee7bcce"
@@ -6068,6 +6145,7 @@
           },
           {
             "name": "media_pcs_dia",
+            "displayFolder": "Médias",
             "expression": [
               "",
               "",
@@ -6088,6 +6166,7 @@
           },
           {
             "name": "media_pd_dia",
+            "displayFolder": "Médias",
             "expression": [
               "",
               "",
@@ -6114,6 +6193,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "Médias",
             "expression": [
               "",
               "",
@@ -6123,6 +6203,7 @@
           },
           {
             "name": "comp_media_pcs",
+            "displayFolder": "Médias",
             "expression": [
               "",
               "",
@@ -6144,6 +6225,7 @@
           },
           {
             "name": "seq",
+            "displayFolder": "Outros",
             "expression": [
               "",
               "",
@@ -6159,6 +6241,7 @@
           },
           {
             "name": "pcs_hoje",
+            "displayFolder": "Outros",
             "expression": [
               "",
               "",
@@ -6177,6 +6260,7 @@
           },
           {
             "name": "ped_hoje",
+            "displayFolder": "Outros",
             "expression": [
               "",
               "",
@@ -6194,6 +6278,7 @@
           },
           {
             "name": "comp_media_ped",
+            "displayFolder": "Médias",
             "expression": [
               "",
               "",
@@ -6221,6 +6306,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "Médias",
             "expression": [
               "",
               "",
@@ -6241,6 +6327,7 @@
           },
           {
             "name": "duracao_6",
+            "displayFolder": "Durações",
             "expression": [
               "",
               "",
@@ -6253,6 +6340,7 @@
           },
           {
             "name": "duracao_12",
+            "displayFolder": "Durações",
             "expression": [
               "",
               "",
@@ -6265,6 +6353,7 @@
           },
           {
             "name": "duracao_24",
+            "displayFolder": "Durações",
             "expression": [
               "",
               "",
@@ -6274,6 +6363,46 @@
             ],
             "formatString": "0",
             "lineageTag": "cdd2def0-325f-4c62-9cf6-33af5567bd8f"
+          },
+          {
+            "name": "d+1",
+            "displayFolder": "Tabela 1",
+            "expression": [
+              "",
+              "",
+              "VAR A =",
+              "CALCULATE(",
+              "    [qt_pedidos],",
+              "    fRelatorio_avancado[status_de_entrega] = \"D+1\")",
+              "",
+              "VAR B =",
+              "IF(A = 0 , 0, A)",
+              "",
+              "RETURN",
+              "B"
+            ],
+            "formatString": "0",
+            "lineageTag": "740fc6f4-cf90-4b6f-accb-e7ca7f8557e6"
+          },
+          {
+            "name": "d+2",
+            "displayFolder": "Tabela 1",
+            "expression": [
+              "",
+              "",
+              "VAR A =",
+              "CALCULATE(",
+              "    [qt_pedidos],",
+              "    fRelatorio_avancado[status_de_entrega] = \"D+2\")",
+              "",
+              "VAR B =",
+              "IF(A = 0 , 0, A)",
+              "",
+              "RETURN",
+              "B"
+            ],
+            "formatString": "0",
+            "lineageTag": "530ead12-1e28-494b-a6d0-a6d851436b38"
           }
         ],
         "partitions": [
@@ -6680,7 +6809,7 @@
                 "else if List.Contains({\"AGUARDANDO NOTA FISCAL\", \"AGUARDANDO REIMPRESSAO DE NOTA FISCAL\", \"AGUARDANDO ETIQUETA\", \"AGUARDANDO REIMPRESSAO DE ETIQUETA\", \"CANCELAMENTO SOLICITADO\", \"AGUARDANDO CANCELAMENTO\", \"AGUARDANDO EXPEDICAO\", \"AGUARDANDO EXPEDICAO(ENVIADO PARA ANALISE)\", \"EM EXPEDICAO\"},[status_pedido]) then ",
                 "\"FATURADO\" ",
                 "",
-                "else if List.Contains({\"AGUARDANDO PACKING\", \"AGUARDANDO PACKING(ENVIANDO PARA ANALISE)\"},[status_pedido]) then \"FIM SEPARAÇÃO\"",
+                "else if List.Contains({\"AGUARDANDO PACKING\", \"AGUARDANDO PACKING (ENVIADO PARA ANALISE)\"},[status_pedido]) then \"FIM SEPARAÇÃO\"",
                 "",
                 "else if [status_pedido] = \"EXPEDIDO\" then \"EXPEDIDO\"",
                 "",
