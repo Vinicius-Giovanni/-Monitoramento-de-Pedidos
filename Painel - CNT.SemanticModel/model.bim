@@ -2272,6 +2272,16 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
+                  },
+                  {
+                    "Liberado p/Separação": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -2964,6 +2974,29 @@
                       },
                       "State": "Suggested",
                       "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medida.teste_novo_calculo_dia_mais_atual": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "teste_novo_calculo_dia_mais_atual"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "teste novo calculo dia mais atual": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "teste_novo_calculo_dia_mais_atual": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
                     }
                   }
                 ]
@@ -5264,6 +5297,39 @@
                 },
                 "State": "Generated"
               },
+              "medida_has_teste_novo_calculo_dia_mais_atual": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.teste_novo_calculo_dia_mais_atual"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_teste_novo_calculo_dia_mais_atual",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.teste_novo_calculo_dia_mais_atual": {
+                    "Target": {
+                      "Entity": "medida.teste_novo_calculo_dia_mais_atual"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "medida_has_text_1": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -5633,7 +5699,7 @@
               "VAR A = ",
               "CALCULATE(",
               "DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
-              "fRelatorio_avancado[dt_status_data] = TODAY())",
+              "fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data]))",
               "",
               "VAR B = ",
               "IF(A = 0 , 0 , A)",
@@ -5653,7 +5719,7 @@
               "VAR A =",
               "CALCULATE(",
               "DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
-              "fRelatorio_avancado[dt_status_data] = TODAY()-1)",
+              "fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data])-1)",
               "",
               "VAR B = ",
               "IF(A = 0 , 0 , A)",
@@ -5673,7 +5739,7 @@
               "VAR A =",
               "CALCULATE(",
               "DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
-              "fRelatorio_avancado[dt_status_data] = TODAY()-7) ",
+              "fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data])-7)",
               "",
               "VAR B = ",
               "IF(A = 0 , 0 , A)",
@@ -5706,7 +5772,7 @@
               "CALCULATE(",
               "    DISTINCTCOUNT(fRelatorio_avancado[hora_status]),",
               "    fRelatorio_avancado[qt_pcs] > 0,",
-              "    fRelatorio_avancado[dt_status_data] = TODAY())",
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data]))",
               "",
               "VAR B =",
               "DIVIDE([qt_movimentada_hoje],A)",
@@ -5733,7 +5799,7 @@
               "CALCULATE(",
               "    DISTINCTCOUNT(fRelatorio_avancado[hora_status]),",
               "    fRelatorio_avancado[qt_pcs] > 0,",
-              "    fRelatorio_avancado[dt_status_data] = TODAY()-1)",
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data])-1)",
               "",
               "VAR B =",
               "DIVIDE([qt_movimentada_ontem],A)",
@@ -5759,7 +5825,7 @@
               "CALCULATE(",
               "    DISTINCTCOUNT(fRelatorio_avancado[hora_status]),",
               "    fRelatorio_avancado[qt_pcs] > 0,",
-              "    fRelatorio_avancado[dt_status_data] = TODAY()-7)",
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data])-7)",
               "",
               "VAR B =",
               "DIVIDE([qt_movimentada_semana_passada],A)",
@@ -5784,9 +5850,9 @@
               "DIVIDE([qt_movimentada_hoje],",
               "CALCULATE(",
               "    DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
-              "    fRelatorio_avancado[dt_status_data] = TODAY()))",
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data]))",
               "",
-              ""
+              ")"
             ],
             "lineageTag": "6ddb14f2-7b47-4765-9161-f6dfcc0622f0"
           },
@@ -5825,9 +5891,9 @@
               "DIVIDE([qt_movimentada_ontem],",
               "CALCULATE(",
               "    DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
-              "    fRelatorio_avancado[dt_status_data] = TODAY()-1))",
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data])-1)",
               "",
-              ""
+              ")"
             ],
             "lineageTag": "05d2780e-2715-4185-8e78-e035521a9df8"
           },
@@ -5846,8 +5912,8 @@
               "DIVIDE([qt_movimentada_semana_passada],",
               "CALCULATE(",
               "    DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
-              "    fRelatorio_avancado[dt_status_data] = TODAY()-7))",
-              ""
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data])-7)",
+              ")"
             ],
             "lineageTag": "5196314d-bb1c-40c5-84f8-1bfc314f6d8e"
           },
@@ -5990,7 +6056,7 @@
               "CALCULATE(",
               "    [qt_pedidos],",
               "    fRelatorio_avancado[new_status] = \"EXPEDIDO\",",
-              "    fRelatorio_avancado[dt_status_data] = TODAY())"
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data]))"
             ],
             "formatString": "0",
             "lineageTag": "fbb0f078-779f-4397-ac44-1166e43e20c9"
@@ -6248,7 +6314,7 @@
               "VAR A = ",
               "CALCULATE(",
               "    SUM(fRelatorio_avancado[qt_pcs]),",
-              "    fRelatorio_avancado[dt_status_data] = TODAY())",
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data]))",
               "",
               "",
               "RETURN",
@@ -6267,7 +6333,7 @@
               "VAR A = ",
               "CALCULATE(",
               "    DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
-              "    fRelatorio_avancado[dt_status_data] = TODAY())",
+              "    fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data]))",
               "",
               "RETURN",
               "A",
@@ -6403,6 +6469,25 @@
             ],
             "formatString": "0",
             "lineageTag": "530ead12-1e28-494b-a6d0-a6d851436b38"
+          },
+          {
+            "name": "teste_novo_calculo_dia_mais_atual",
+            "expression": [
+              "",
+              "",
+              "VAR A =",
+              "CALCULATE(",
+              "DISTINCTCOUNT(fRelatorio_avancado[pedido]),",
+              "fRelatorio_avancado[dt_status_data] = SELECTEDVALUE(dHora_atual[data])-1)",
+              "",
+              "VAR B = ",
+              "IF(A = 0 , 0 , A)",
+              "",
+              "RETURN",
+              "B"
+            ],
+            "formatString": "0",
+            "lineageTag": "e9b2a7e7-80d9-4dc8-9103-ac9cb1bdd858"
           }
         ],
         "partitions": [
